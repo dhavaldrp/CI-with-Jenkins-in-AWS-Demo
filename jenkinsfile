@@ -5,7 +5,7 @@ pipeline {
 		PROJECT_ID = 'PROJECT SuperLeague'
                 CLUSTER_NAME = 'k8s-cluster-gcs'
                 LOCATION = 'us-central1-c'
-                CREDENTIALS_ID = 'k8s-gcs'
+                CREDENTIALS_ID = 'docker'
 	}
 	
     stages {	
