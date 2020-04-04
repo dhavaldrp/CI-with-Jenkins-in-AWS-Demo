@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: s5231610/tomcat:tagversion
+        image: gcr.io/s5231610/tomcat:tagversion
         ports:
         - containerPort: 8080
 ---
