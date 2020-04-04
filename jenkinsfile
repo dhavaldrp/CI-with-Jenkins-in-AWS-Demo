@@ -30,7 +30,7 @@ pipeline {
 	   stage('Build Docker Image') { 
 		steps {
                    script {
-		      myimage = docker.build("dhaval/devops:${env.BUILD_ID}")
+		      myimage = docker.build("s5231610/tomcat:${env.BUILD_ID}")
                    }
                 }
 	   }
