@@ -5,7 +5,7 @@ pipeline {
 		PROJECT_ID = 'optimal-moon-260318'
                 CLUSTER_NAME = 'k8s-cluster-gcs'
                 LOCATION = 'us-central1-c'
-                CREDENTIALS_ID = 'k8s-cluster-gcs'
+                CREDENTIALS_ID = 'k8s-gcs'
 		
 	}
 	
