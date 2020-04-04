@@ -6,6 +6,7 @@ pipeline {
                 CLUSTER_NAME = 'k8s-cluster-gcs'
                 LOCATION = 'us-central1-c'
                 CREDENTIALS_ID = 'k8s-cluster-gcs'
+		
 	}
 	
     stages {	
