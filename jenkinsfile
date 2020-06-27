@@ -31,14 +31,14 @@ pipeline {
 	   stage('Build Docker Image') { 
 		steps {
                    script {
-		      myimage = docker.build("vijayanandsivakumar/kube8s:${env.BUILD_ID}")
+		      myimage = docker.build("gcr.io/s5231610/tomcat:${env.BUILD_ID}")
                    }
                 }
 	   }
 	   stage("Push Docker Image") {
                 steps {
                    script {
-                      docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
+                     docker.withRegistry('https://gcr.io', 'gcr:gcr-devops') {
                             myimage.push("${env.BUILD_ID}")		
                      }
 			   
